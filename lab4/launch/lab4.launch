@@ -1,0 +1,4 @@
+<launch>
+	<node name="grid_localization_bayes_filter" pkg="lab4" type="gridlocalization.py" args="$(find lab4)/scripts/grid.bag"/>
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find lab4)/scripts/gridlocalization.rviz"/>
+</launch>
